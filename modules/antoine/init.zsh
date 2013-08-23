@@ -7,4 +7,3 @@
 
 # Source my aliases
 source "${0:h}/alias.zsh"
-
