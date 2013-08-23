@@ -24,14 +24,20 @@ zstyle ':prezto:*:*' color 'yes'
 # Set the Prezto modules to load (browse modules).
 # The order matters.
 zstyle ':prezto:load' pmodule \
+  'archive' \
   'environment' \
   'terminal' \
   'editor' \
+  'git' \
   'history' \
   'directory' \
   'spectrum' \
   'utility' \
   'completion' \
+  'antoine' \
+  'minilogs' \
+  'syntax-highlighting' \
+  'history-substring-search' \
   'prompt'
 
 #
@@ -85,7 +91,7 @@ zstyle ':prezto:module:editor' keymap 'emacs'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:prompt' theme 'antoine'
 
 #
 # Screen
@@ -135,3 +141,5 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 # Auto start a session when Zsh is launched.
 # zstyle ':prezto:module:tmux' auto-start 'yes'
 
+bindkey "^[^[[C" forward-word
+bindkey "^[^[[D" backward-word
