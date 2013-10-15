@@ -11,6 +11,7 @@ alias aaa='export VIRTUAL_ENV_DISABLE_PROMPT='1' && source /srv/www/minilogs.com
 alias supd='supervisord -c /etc/supervisord.conf'
 alias supctl='supervisorctl'
 alias pipinstall='pip --environment=/srv/www/minilogs.com/ install -r /srv/www/minilogs.com/minilogs/requirements.txt'
+alias clearmemcache='/etc/init.d/memcached restart'
 
 # supervisor
 alias rs='supervisorctl restart minilogs.com'
@@ -21,7 +22,9 @@ rsnginx='/etc/init.d/nginx restart'
 rspgsql='/etc/init.d/postgresql restart'
 
 # fabric
-alias depchr='fab deploy_chrome_ext:app=cave,destdir="/host_sharing/chrome_extension"'
+#alias depchr='fab deploy_chrome_ext:app=cave,destdir="/host_sharing/chrome_extension"'
+alias depchr='fab package_chrome_ext:app=cave,debug=true && deploy_chrome_ext'
+alias endissue='fab ready_for_review && fab send_pull_request'
 
 # manage.py aliases
 alias pyman='python /srv/www/minilogs.com/minilogs/manage.py'
