@@ -294,6 +294,10 @@ for keymap in 'emacs' 'viins'; do
 
   # Insert 'sudo ' at the beginning of the line.
   bindkey -M "$keymap" "$key_info[Control]X$key_info[Control]S" prepend-sudo
+
+  # Meta + left/right arrows = move to previous/next word
+  bindkey -M "$keymap" "$key_info[Meta]$key_info[Left]" backward-word
+  bindkey -M "$keymap" "$key_info[Meta]$key_info[Right]" forward-word
 done
 
 # Do not expand .... to ../.. during incremental search.

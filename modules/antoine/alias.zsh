@@ -16,4 +16,7 @@ alias f5='fg 5'
 alias f6='fg 6'
 alias proc="ps aux | grep"
 alias vup="cd /Users/antoine/MinilogsVM/ && vagrant up"
+alias svup="sudo launchctl load /Library/LaunchDaemons/org.virtualbox.startup.plist && cd /Users/antoine/MinilogsVM/ && vagrant up"
 alias mnl="ssh mnl"
+alias droid="cd ~/MinilogsVM/android/MinilogsAndroidApp"
+alias adb="/Applications/Android\ Studio.app/sdk/platform-tools/adb"

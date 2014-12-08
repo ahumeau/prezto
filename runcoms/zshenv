@@ -42,6 +42,7 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+  /usr/local/apache-maven-3.2.1/bin
   /Development/adt-bundle/sdk/{tools,platform-tools}
   /usr/local/{bin,sbin}
   $path

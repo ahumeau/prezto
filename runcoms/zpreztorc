@@ -1,4 +1,5 @@
-#
+# -*- mode: shell-script -*-
+
 # Sets Prezto options.
 #
 # Authors:
@@ -147,3 +148,5 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 # Auto start a session when Zsh is launched in a SSH connection.
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
+#bindkey "^[^[[D" backward-word
+#bindkey "^[^[[C" forward-word
