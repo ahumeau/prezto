@@ -19,4 +19,5 @@ alias vup="cd /Users/antoine/MinilogsVM/ && vagrant up"
 alias svup="sudo launchctl load /Library/LaunchDaemons/org.virtualbox.startup.plist && cd /Users/antoine/MinilogsVM/ && vagrant up"
 alias mnl="ssh mnl"
 alias droid="cd ~/MinilogsVM/android/MinilogsAndroidApp"
-alias adb="/Applications/Android\ Studio.app/sdk/platform-tools/adb"
+alias fuck='$(thefuck $(fc -ln -1))'
+alias prm=". ~/Code/prm/prm.sh"

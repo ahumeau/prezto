@@ -46,6 +46,9 @@ path=(
     /usr/local/apache-maven-3.2.1/bin
     /Development/adt-bundle/sdk/{tools,platform-tools}
     /usr/local/{bin,sbin}
+    ~/androidsdk/tools
+    ~/androidsdk/build-tools/22.0.1
+    ~/androidsdk/platform-tools
     $path
 )
 
@@ -77,3 +80,18 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 if [[ ! -d "$TMPPREFIX" ]]; then
   mkdir -p "$TMPPREFIX"
 fi
+
+# Setting PATH for Python 3.4
+# The orginal version is saved in .zprofile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
+
+# Setting PATH for Python 2.7
+# The orginal version is saved in .zprofile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH
+
+# Setting PATH for Python 3.5
+# The orginal version is saved in .zprofile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+export PATH
