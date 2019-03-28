@@ -81,6 +81,8 @@ function pmodload {
     fi
   done
 }
+fpath+=~/.zfunc
+
 
 #
 # Prezto Initialization

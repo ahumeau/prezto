@@ -10,7 +10,3 @@ source "${0:h}/alias.zsh"
 
 
 export WORKON_HOME="$HOME/.virtualenvs"
-
-export RUST_SRC_PATH="/Users/antoine/Code/rustc-1.2.0/src"
-
-source /usr/local/bin/virtualenvwrapper.sh
