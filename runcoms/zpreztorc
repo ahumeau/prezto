@@ -39,8 +39,8 @@ zstyle ':prezto:load' pmodule \
   'antoine' \
   'syntax-highlighting' \
   'history-substring-search' \
-  'prompt' \
-  'django'
+  'prompt'
+
 
 #
 # Editor
